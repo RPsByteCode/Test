@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clickable Cover Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to bottom, #6a11cb, #2575fc);
+        }
+        .cover-container {
+            position: relative;
+            width: vw;
+            height: 70%;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+        .clickable-area {
+            position: absolute;
+            top: 20%;
+            right: 10%;
+            width: 80%;
+            height: 60%;
+            background: rgba(255, 64, 129, 0.3); /* Highlight area for demo */
+            border: 2px dashed rgba(255, 255, 255, 0.6);
+            cursor: pointer;
+        }
+        .clickable-area:hover {
+            background: rgba(0, 255, 255, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="cover-container">
+        <!-- Add any content here for the cover page -->
+        <h1 style="text-align: center; margin-top: 20px;">Welcome to My Cover Page</h1>
+        <p style="text-align: center; padding: 0 20px;">Click on the highlighted area to open the file.</p>
+
+        <!-- Clickable Area -->
+        <a href="CG Unit 3 Notes.pdf" target="_blank" class="clickable-area" title="Open File"></a>
+    </div>
+</body>
+</html>
